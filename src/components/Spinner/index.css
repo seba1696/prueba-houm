@@ -1,0 +1,19 @@
+.spinner {
+    border: 4px solid var(--orange);
+    border-left-color: transparent;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    justify-self: center;
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }

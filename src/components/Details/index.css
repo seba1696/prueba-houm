@@ -1,0 +1,71 @@
+.movie-detail {
+    justify-self: center;
+    width: fit-content;
+    margin: 16px;
+    border-radius: 8px;
+    background-color: var(--white);
+    display: flex;
+    gap: 24px;
+    justify-items: center;
+    padding: 8px;
+    align-items: center;
+}
+
+@media (max-width:800px) {
+    .movie-detail {
+        display: grid;
+    }
+}
+
+.movie-detail img {
+    border-radius: 10px;
+    height: 500px;
+    width: auto;
+}
+
+@media (max-width:400px) {
+    .movie-detail img{
+        height: 350px;
+    }
+}
+
+.movie-detail table {
+    border-radius: 8px;
+    border: 1px solid var(--gray-ligth);
+    border-spacing: 0px;
+}
+
+.movie-detail table tbody:first-child {
+    border-radius: 10px;
+}
+
+.movie-detail table tbody tr td {
+    border: 1px solid var(--gray-ligth);
+    padding: 0px 16px;
+    text-align: right;
+    font-size: 14px;
+}
+
+.movie-detail table tbody tr th {
+    border: 1px solid var(--gray-ligth);
+    padding: 6px 16px;
+    text-align: right;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.movie-detail table tbody tr th {
+    text-align: left;
+}
+
+.movie-detail table thead tr td {
+    border: 1px solid var(--gray-ligth);
+    text-align: center;
+    font-size: 18px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.movie-detail table tbody tr td p {
+    margin: 0px;
+}
