@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div className="App">
       <section className="App-content">
-        <img src={background} className="background-img" />
+        <img src={background} className="background-img" alt="background-img" />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/query/:query/" element={<SearchResults />} >
