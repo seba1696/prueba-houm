@@ -38,12 +38,12 @@ export const Search = () => {
             <div className="searching-options">
                 <div className="input-search-container">
                     <input type="text" value={query} onChange={handleChangeText} />
-                    <img src={search} />
+                    <img src={search} alt="search" />
                 </div>
                 <select onChange={handleChangeYear}>
                     <option value="" className={!selectedYear ? "active" : ""}>Todos</option>
                     {yearsOptions.map(year =>
-                        <option value={year} key={year} className={selectedYear == year ? "active" : ""}>{year}</option>
+                        <option value={year} key={year} className={selectedYear === year ? "active" : ""}>{year}</option>
                     )}
                 </select>
             </div>
