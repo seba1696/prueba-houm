@@ -13,6 +13,7 @@ form button {
     color: var(--orange);
     font-size: 14px;
     line-height: 18px;
+    font-family: Nunito;
 }
 
 form .searching-options {
@@ -39,6 +40,7 @@ form input {
     border: 0px;
     color: var(--blue-gray);
     background-color: var(--white-gray);
+    font-family: Nunito;
 }
 
 form input:focus-visible {
@@ -51,6 +53,7 @@ form select {
     border-radius: 16px;
     border: 1px solid var(--gray);
     display: flex;
+    font-family: Nunito;
 }
 
 form select:focus-visible {
