@@ -20,7 +20,7 @@ export const useSearch = ({ query = "", year }: Props) => {
             .then(data => setData(data))
             .catch(e => setErrors(e))
             .finally(() => setLoading(false))
-    }, [query])
+    }, [query, year])
 
     useEffect(() => {
         if (page === INITIAL_PAGE) return

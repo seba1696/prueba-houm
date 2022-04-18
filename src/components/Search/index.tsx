@@ -9,9 +9,13 @@ export const Search = () => {
     const [yearsOptions, setYearsOptions] = useState<Array<string>>([])
     let navigate = useNavigate();
 
+    const cantSubmit = (): void => {
+        if (query || (selectedYear && query)) navigate(`/query/${query}/${selectedYear}`)
+    }
+
     const handleSubmit = (evt: React.FormEvent<HTMLFormElement>) => {
         evt.preventDefault()
-        if (query || (selectedYear && query)) navigate(`/query/${query}/${selectedYear}`)
+        cantSubmit()
     }
 
     const handleChangeText = (evt: React.ChangeEvent<HTMLInputElement>) => {
@@ -31,6 +35,10 @@ export const Search = () => {
         }
         setYearsOptions(arr)
     }, [])
+
+    useEffect(() => {
+        cantSubmit()
+    }, [selectedYear])
 
     return (
 
